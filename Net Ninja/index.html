@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/scss/main.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Net Ninja Pro - The Book</title>
+    <style>
+        section{
+            padding: 60px 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md ">
+        <div class="container-lg">
+            <a href="#intro" class="navbar-brand">
+                <span class="text-secondary fw-bold"><i class="bi bi-book-half"></i> Net Ninja Pro - The Book</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#main-nav" aria-controls="main-nav"     
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center " id="main-nav">
+                <ul class="navbar-nav align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#intro">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#topics">Topics</a>
+                  </li>
+                  <li class="nav-item d-md-none">
+                    <a class="nav-link active" aria-current="page" href="#pricing">Pricing</a>
+                  </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          More info
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#reviews">Testimonials</a></li>
+                          <li><a class="dropdown-item" href="#">Biblography</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href="#pricing" class="btn btn-secondary  rounded-pill border mt-1 mb-3">Buy Now</a>
+                    </li>
+                  
+                </ul>
+                
+              </div>
+            
+        </div>
+
+    </nav>
+
+
+    <!--Main image and intro-->
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Black Belt</div>
+                        <div class="display-5 text-muted">Your coding skills</div>
+                        <p class="lead text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#pricing" class="btn btn-secondary  rounded-pill border my-3">Buy Now</a>
+                    </h1>
+                </div>
+                <div class="col-md-5 text-center">
+                  <!--tt is the class that I made for tooltip, you can use any name for the class except the tooltip because it is a bootstrap class-->
+                  <span class="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Net Ninja Pro- The Book">
+                    <img class="img-fluid d-none d-md-block"  src="/assets/ebook-cover.png" alt="ebook-cover">
+                  </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Pricing plans-->   
+    
+    <section id="pricing" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="container-lg text-center">
+                <h4>Pricing Plans</h4>
+                <p class="text-muted">Choose a plan that suits you</p>
+            </div>
+            <div class="row justify-content-center align-items-center my-5">
+                <div class="col-8 col-md-3 text-center my-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Starter's Edition</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">For the Beginners</h6>
+                          <p class="card-text d-none d-md-block">Smoothen your start with Net Ninja and get stong basic conceptual knowledge</p>
+                          <p class="fs-3 fw-bold text-center text-success">$1.99</p>
+                          <a href="#" class="card-link btn btn-outline-success border-3 fw-bold rounded-pill  p-2" data-bs-toggle="modal" data-bs-target="#starters-modal">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-md-3 text-center my-3">
+                    <div class="card border-3 border-success">
+                        <div class="card-header text-success fw-bold">
+                            Most Popular
+                          </div>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Advance the concepts</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Improve your skills</h6>
+                          <p class="card-text d-none d-md-block">Learn the advance skills and start implementing them on real world problems</p>
+                          <p class="fs-3 fw-bold text-center text-success">$3.99</p>
+                          <a href="#" class="card-link btn btn-outline-success border-3 fw-bold rounded-pill  p-2" data-bs-toggle="modal" data-bs-target="#mid-modal">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-3 text-center my-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Advance</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Get Market Ready</h6>
+                          <p class="card-text d-none d-md-block">Learn the advance concepts of Data Structures and Algo, DBMS and Ml and become a job ready programmer</p>
+                          <p class="fs-3 fw-bold text-center text-success">$7.99</p>
+                          <a href="#" class="card-link btn btn-outline-success border-3 fw-bold rounded-pill  p-2" data-bs-toggle="modal" data-bs-target="#advance-modal">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                          
+                
+        </div>
+
+    </section>
+
+
+
+
+    <!--topics at a glance-->
+    <section id="topics">
+        <div class="container-lg">
+            <div class="row mb-4">
+                <div class="col-md-5"></div>
+                <div class="col-9 col-md-5 justify-content-center">
+                    <h4 class="text-center text-md-end me-4">Topics At A Glance</h4>
+
+                </div>
+                
+            </div>
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-md-5 text-start">
+                    <img src="/assets/kindle.png" alt="kindle" class="img-fluid d-none d-md-block" >
+                </div>
+                <div class="col-8 col-md-5 justify-content-around">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Chapter-1: HTML
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>HTML:</strong>Hyper text Markup Language i.e. the industry standard to structure a webpage. It is the extreme basic of web development.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Chapter-2: CSS
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>CSS</strong> Cascading Style Sheet, it is tool i.e. used for styling the structure made using the HTML without it the web pages look really bad.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Chapter-3: Bootstrap
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Bootstrap.</strong>The world's most popular HTML and CSS framework i.e. used widely in the industry and it makes the development of a web page very easy.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Chapter-4: JavaScript
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>JavaScript:</strong> It adds functionality to your webpages.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Chapter-5: Projects
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Real World Projects:</strong>By now you will know all the basics of frontend web development and now you will flourish your knowledge by working on real world projects.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="col-8 ">
+                    <img src="/assets/kindle.png" alt="kindle" class="img-fluid d-block d-md-none" >
+                </div>
+                   
+            </div>
+        </div>
+    </section>
+    <!--Book review-->
+    <section id="reviews" class="bg-tertiary">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Book reviews <i class="bi bi-stars"></i></h2>
+          <p class="text-muted">See what the students have to say about the book....</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-6">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Brain O' Corner</h5>
+                  <small class="d-none d-lg-block text-muted">5/5</small>
+                </div>
+                <p class="mb-1">The book made me a programmer</p>
+                <small class="text-muted">This book hepled me gain not only my programming skills but also the logical thinking that goes behind it.</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"><b>Dom Toretto</b></h5>
+                  <small class="d-none d-lg-block text-muted">4.5/5</small>
+                </div>
+                <p class="mb-1">Fabulous</p>
+                <small class="text-muted">This book hepled me gain not only my programming skills but also the logical thinking that goes behind it.</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"><b>Tom Cruize</b></h5>
+                  <small class="d-none d-lg-block text-muted">5/5</small>
+                </div>
+                <p class="mb-1">Simply Awesome</p>
+                <small class="text-muted">This book hepled me gain not only my programming skills but also the logical thinking that goes behind it</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Contact form-->
+    <section class="contact" id="contact">
+      <div class="conatiner-lg">
+        <div class="container-lg text-center">
+          <h3>Get In touch</h3>
+          <p class="text-muted">Got questions? Fill the form and our team will contact you shortly!</p>
+        </div>
+        <div class="row justify-content-center mx-2">
+          <div class="col-md-6 col-lg-8 ">
+            <form>
+              <div class="mb-3">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                  <input type="text" class="form-control" id="name" placeholder="Full Name">
+                  <span class=" tt input-group-text" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Provide the name by which you would like us to address you."><i class="bi bi-question-circle"></i></span>
+
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                  <span class=" tt input-group-text" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Provide your email so that we can connect with you"><i class="bi bi-question-circle"></i></span>
+                </div>
+
+              </div>
+              <div class="mb-3">
+                <label for="query" class="form-label">What is your question about?</label>
+                <select class="form-select" aria-label="Default select example" id="query">
+                  <option selected>Choose From..</option>
+                  <option value="1">Content query</option>
+                  <option value="2">Pricing query</option>
+                  <option value="3">Author related query</option>
+                  <option value="4">Other query</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="textarea1" class="form-label">Type in your questions?</label>
+                <textarea class="form-control" id="textarea1" rows="3" placeholder="Feel free to ask anything"></textarea>
+              </div>
+              <div class="mb-3">
+                <a href="#pricing" class="btn btn-outline btn-secondary rounded-pill border-2 p-2"  data-bs-toggle="modal" data-bs-target="#submit-modal">Submit</a>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light">
+      <div class="container-lg text-center">
+        <h4>Stay Connected</h4>
+        <p class="text-muted">Get the latest updates as they happen!!</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col col-md-8 text-center">
+          <p class="text-muted">To keep trek of what's new in the industry and never stop learning subscribe to our newsletter.</p>
+          <buttton class="btn btn-outline-success rounded-pill border-2 fw-bold" data-bs-toggle="modal" data-bs-target="#subscribe-modal">Subscribe</buttton>
+          
+        </div>
+      </div>
+    </section>
+    
+   
+    <!--Modals-->
+    <!--Modal-1-pricing-->
+    <div class="modal fade" id="starters-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Great!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            You have made a great investment with the Starters Edition.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!--Using offcanvas-->
+            <a  href="#payment1" class="btn btn-success text-white" data-bs-toggle="offcanvas"  role="button" aria-controls="payment1">Pay Now</a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="payment1" aria-labelledby="payment1">
+              <div class="offcanvas-header  bg-info text-white fw-bold">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Choose Payment Option</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  <span class="fw-bold">You can pay by using:-</span><hr>
+                  <form class="my-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Debit Card
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Credit Card
+                      </label>
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text" id="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter the name as given on the card."><i class="bi bi-person-circle"></i></span>
+                      <input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text" id="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="10 digits Card Number."><i class="bi bi-credit-card"></i></span>
+                      <input type="number" class="form-control" placeholder="Card Number" aria-label="cardnumber" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text" id="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="3 Digit CVV.">CVV</span>
+                      <input type="number" class="form-control"  aria-label="cvv" aria-describedby="basic-addon1">
+                    </div>
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                      <option selected>Select Card</option>
+                      <option value="1">Visa</option>
+                      <option value="2">Mastercard</option>
+                      <option value="3">Rupay</option>
+                    </select>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Agree to our <a href="#">Terms and policy</a>
+                      </label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Save this as your default card</label>
+                    </div>
+                  </form>
+                </div>
+                <span class="pe-5">Your Total:<span class="text-success fw-bold"> $1.99</span></span>
+               <button class="btn btn-outline-success">Proceed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal-2-pricing-->
+    <div class="modal fade" id="mid-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Great!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            You are gonna get better at this.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a  href="#payment2" class="btn btn-success text-white" data-bs-toggle="offcanvas"  role="button" aria-controls="payment2">Pay Now</a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="payment2" aria-labelledby="payment2">
+              <div class="offcanvas-header  bg-info text-white fw-bold">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Choose Payment Option</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  <span class="fw-bold">You can pay by using:-</span><hr>
+                  <form class="my-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Debit Card
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Credit Card
+                      </label>
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text" id="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter the name as given on the card."><i class="bi bi-person-circle"></i></span>
+                      <input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text" id="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="10 digits Card Number."><i class="bi bi-credit-card"></i></span>
+                      <input type="number" class="form-control" placeholder="Card Number" aria-label="cardnumber" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text" id="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="3 Digit CVV.">CVV</span>
+                      <input type="number" class="form-control"  aria-label="cvv" aria-describedby="basic-addon1">
+                    </div>
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                      <option selected>Select Card</option>
+                      <option value="1">Visa</option>
+                      <option value="2">Mastercard</option>
+                      <option value="3">Rupay</option>
+                    </select>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Agree to our <a href="#">Terms and policy</a>
+                      </label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Save this as your default card</label>
+                    </div>
+                  </form>
+                </div>
+                <span class="pe-5">Your Total:<span class="text-success fw-bold"> $3.99</span></span>
+               <button class="btn btn-outline-success">Proceed</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal-3-pricing-->
+    <div class="modal fade" id="advance-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Great!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Get ready for a high paying job!!!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a  href="#payment3" class="btn btn-success text-white" data-bs-toggle="offcanvas"  role="button" aria-controls="payment3">Pay Now</a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="payment3" aria-labelledby="payment3">
+              <div class="offcanvas-header  bg-info text-white fw-bold">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Choose Payment Option</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  <span class="fw-bold">You can pay by using:-</span><hr>
+                  <form class="my-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Debit Card
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Credit Card
+                      </label>
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text" id="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter the name as given on the card."><i class="bi bi-person-circle"></i></span>
+                      <input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text" id="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="10 digits Card Number."><i class="bi bi-credit-card"></i></span>
+                      <input type="number" class="form-control" placeholder="Card Number" aria-label="cardnumber" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text" id="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="3 Digit CVV.">CVV</span>
+                      <input type="number" class="form-control"  aria-label="cvv" aria-describedby="basic-addon1">
+                    </div>
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                      <option selected>Select Card</option>
+                      <option value="1">Visa</option>
+                      <option value="2">Mastercard</option>
+                      <option value="3">Rupay</option>
+                    </select>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Agree to our <a href="#">Terms and policy</a>
+                      </label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Save this as your default card</label>
+                    </div>
+                  </form>
+                </div>
+                <span class="pe-5">Your Total:<span class="text-success fw-bold"> $7.99</span></span>
+               <button class="btn btn-outline-success">Proceed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal-4-submit-->
+    <div class="modal fade" id="submit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Our team will contact you shortly :)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Till then you can keep learning from our Youtube channel "Net Ninja" for free!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keep surfing</button>
+            <a href="https://www.youtube.com/c/TheNetNinja" target="main" class="btn btn-success text-white">Net Ninja - Youtube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal-5-subscribe-->
+    <div class="modal fade" id="subscribe-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <h5 class="modal-title" id="exampleModalLabel">Subscribe to our newsletter.</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <form>
+              <div class="mb-3">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                  <span class=" tt input-group-text" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Provide the email on which you want to recieve the notifications"><i class="bi bi-question-circle"></i></span>
+                </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="#"  class="btn btn-outline-info">Subscribe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Offcampus for pay now-->
+    
+
+
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+      const tooltips = document.querySelectorAll('.tt')
+      tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+        
+      });
+    </script>
+</body>
+</html>
